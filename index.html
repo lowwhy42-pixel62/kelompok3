@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Tugas Video</title>
+
+    <!-- Font Lato -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Lato', sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: #333;
+        }
+
+        header {
+            padding: 40px 20px;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin: 0;
+        }
+
+        nav {
+            background: rgba(0,0,0,0.3);
+            padding: 12px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            backdrop-filter: blur(5px);
+        }
+
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffd369;
+        }
+
+        section {
+            padding: 60px 20px;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            background: white;
+            max-width: 900px;
+            width: 100%;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            animation: fadeUp 1s ease;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #5a4fcf;
+        }
+
+        .anggota p {
+            margin: 5px 0;
+        }
+
+        #video-baru {
+            background: linear-gradient(135deg, #fdfbfb, #ebedee);
+        }
+
+        video {
+            width: 100%;
+            border-radius: 15px;
+            margin-top: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        #penutup {
+            background: linear-gradient(135deg, #d4fc79, #96e6a1);
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Website Tugas Video</h1>
+    <p>Kelompok 3</p>
+</header>
+
+<nav>
+    <a href="#perkenalan">Perkenalan</a>
+    <a href="#video-baru">Video</a>
+    <a href="#penutup">Penutup</a>
+</nav>
+
+<section id="perkenalan">
+    <div class="card">
+        <h2>Perkenalan</h2>
+
+        <p><b>Mata Kuliah:</b> Bahasa Inggris</p>
+        <p><b>Dosen Pengampu:</b>Feriel Amelia Sembiring, M.Sos</p>
+
+        <p>
+            Website ini dibuat sebagai media presentasi tugas video <b>Kelompok 3</b>.
+        </p>
+
+        <p><b>Nama-nama Kelompok:</b></p>
+        <div class="anggota">
+            <p>Yuyun Afrida Lumbantobing</p>
+            <p>Raja Halomoan Simbolon</p>
+            <p>Gilbert Damero Napitu</p>
+            <p>Giofani Silaban</p>
+            <p>Anggita Lumbantobing</p>
+            <p>Felicia Simanjuntak</p>
+        </div>
+
+        <p>
+            Silakan menonton video pembelajaran yang telah kami siapkan sebagai bagian dari penilaian tugas mata kuliah.
+        </p>
+    </div>
+</section>
+
+<section id="video-baru">
+    <div class="card">
+        <h2>Video Tugas</h2>
+        <p>Berikut video tugas kami:</p>
+
+        <video controls>
+            <source src="video.mp4" type="video/mp4">
+            Browser Anda tidak mendukung video.
+        </video>
+    </div>
+</section>
+
+<section id="penutup">
+    <div class="card">
+        <h2>Penutup</h2>
+        <p>
+            Demikian website tugas video yang telah kami sajikan.<br>
+            Kami berharap video ini dapat memberikan pemahaman dan manfaat bagi para penonton.
+        </p>
+
+        <p>
+            Terima kasih atas perhatian dan kesempatan yang diberikan.
+        </p>
+
+        <p><b>Kelompok 3</b></p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Website Tugas Video</p>
+</footer>
+
+</body>
+</html>
